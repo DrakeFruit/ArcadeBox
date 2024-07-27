@@ -1,0 +1,496 @@
+{
+  "__guid": "325a4042-0696-43dd-a79d-dcc314299ba3",
+  "GameObjects": [
+    {
+      "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "-0.00002288818,0,128",
+      "Rotation": "0,0.7071067,0,0.7071068",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "cf3cbf96-22b6-4be4-a5d0-672a96c17f9f",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": true,
+          "OrthographicHeight": 125,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        },
+        {
+          "__type": "InteractionManager",
+          "__guid": "ccc961b7-405c-4537-9733-f948927a8143",
+          "Squares": [
+            {
+              "_type": "component",
+              "component_id": "b5e76b75-66ba-470c-9343-7ded4df5d6dd",
+              "go": "c4cfbc09-f6e9-4dfd-ac19-7db4a4224026",
+              "component_type": "GridSquare"
+            },
+            {
+              "_type": "component",
+              "component_id": "6fbdff2d-83e0-4a1c-9755-8288163c5d72",
+              "go": "3a946dc0-e499-4b5f-8191-27fff0bb2f8d",
+              "component_type": "GridSquare"
+            },
+            {
+              "_type": "component",
+              "component_id": "9be5b571-d0c2-4c32-b684-a83b8977801d",
+              "go": "5862ad22-88e7-44ed-96a0-8e23477200a2",
+              "component_type": "GridSquare"
+            },
+            {
+              "_type": "component",
+              "component_id": "08ec8b18-79d1-4e67-892a-29af1d6daac9",
+              "go": "ccb4c9bd-0f87-4e35-a63b-bc6b5fb82469",
+              "component_type": "GridSquare"
+            },
+            {
+              "_type": "component",
+              "component_id": "5dafd43c-5a0e-4560-a74f-1d7b7430badc",
+              "go": "37803fad-69e0-4c32-ad91-5f8f9c9c064c",
+              "component_type": "GridSquare"
+            },
+            {
+              "_type": "component",
+              "component_id": "7f9c762d-c785-47a9-8892-99bdc6f3ef27",
+              "go": "aeddf80c-217e-4cb7-ade2-997ebe7f2a39",
+              "component_type": "GridSquare"
+            },
+            {
+              "_type": "component",
+              "component_id": "32b94b3d-4139-4721-8d55-731a3d7de53a",
+              "go": "827a3d36-38eb-4f5a-89e0-9f9c8b6f68aa",
+              "component_type": "GridSquare"
+            },
+            {
+              "_type": "component",
+              "component_id": "a871f348-a3bd-417f-af7a-745a80ffb6ba",
+              "go": "69bf63f7-32f6-4ec3-add0-64e10766eb1d",
+              "component_type": "GridSquare"
+            },
+            {
+              "_type": "component",
+              "component_id": "f07d51cd-f287-4b24-ad47-47c5f1c0c13a",
+              "go": "a5e52ba3-ae5d-41f3-9756-97b0153bec41",
+              "component_type": "GridSquare"
+            }
+          ],
+          "Winner": {
+            "_type": "component",
+            "component_id": "184dc2c7-df9e-4c4e-92fd-73492f79bd9b",
+            "go": "241870f8-f750-49b6-b85f-477a59c1f086",
+            "component_type": "WinScreen"
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "c7166da1-be95-48e9-91d5-1416ee237937",
+      "Flags": 0,
+      "Name": "Grid",
+      "Position": "0,-16,-0.0000009207083",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "e3690406-200c-4f95-9d8e-d46790b3d2a9",
+          "Flags": 0,
+          "Name": "Left",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.LineRenderer",
+              "__guid": "b88c1769-558b-4c65-96bb-cfb2b52b165d",
+              "Color": {
+                "color": [
+                  {
+                    "t": 0.5,
+                    "c": "1,1,1,1"
+                  }
+                ],
+                "alpha": []
+              },
+              "EndCap": "Rounded",
+              "Opaque": false,
+              "Points": [
+                {
+                  "_type": "gameobject",
+                  "go": "a26bceff-5e18-4ea4-a9cb-dd81d0c0f78e"
+                },
+                {
+                  "_type": "gameobject",
+                  "go": "7df482d8-4aaf-409b-b52e-c7e2966f848f"
+                }
+              ],
+              "SplineBias": 0,
+              "SplineContinuity": 0,
+              "SplineInterpolation": 8,
+              "SplineTension": 0,
+              "StartCap": "Rounded",
+              "UseVectorPoints": false,
+              "VectorPoints": [],
+              "Width": [
+                {
+                  "y": 1
+                }
+              ],
+              "Wireframe": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "1bbfaaa0-fc73-4ff1-a4e1-b4c8e369ddd2",
+              "Flags": 0,
+              "Name": "Point 1",
+              "Position": "48,32,0.000002932632",
+              "Enabled": true
+            },
+            {
+              "__guid": "a04e7aa6-a1b9-4a55-b32e-a732fbfd1d5b",
+              "Flags": 0,
+              "Name": "Point 2",
+              "Position": "-48,32,-0.0000009298831",
+              "Enabled": true
+            }
+          ]
+        },
+        {
+          "__guid": "e5e96df4-c058-48bf-bb72-1dff7a44d54b",
+          "Flags": 0,
+          "Name": "Right",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.LineRenderer",
+              "__guid": "8e9fb8d0-5613-4048-a1a8-08ca778d41d5",
+              "Color": {
+                "color": [
+                  {
+                    "t": 0.5,
+                    "c": "1,1,1,1"
+                  }
+                ],
+                "alpha": []
+              },
+              "EndCap": "Rounded",
+              "Opaque": false,
+              "Points": [
+                {
+                  "_type": "gameobject",
+                  "go": "731a95e2-63f3-4164-8148-01cce1cf6005"
+                },
+                {
+                  "_type": "gameobject",
+                  "go": "e8c6ab66-5368-47ee-87ae-8c0a25d7e243"
+                }
+              ],
+              "SplineBias": 0,
+              "SplineContinuity": 0,
+              "SplineInterpolation": 8,
+              "SplineTension": 0,
+              "StartCap": "Rounded",
+              "UseVectorPoints": false,
+              "VectorPoints": [],
+              "Width": [
+                {
+                  "y": 1
+                }
+              ],
+              "Wireframe": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "a26bceff-5e18-4ea4-a9cb-dd81d0c0f78e",
+              "Flags": 0,
+              "Name": "Point 1",
+              "Position": "48,0,-0.00001378808",
+              "Enabled": true
+            },
+            {
+              "__guid": "7df482d8-4aaf-409b-b52e-c7e2966f848f",
+              "Flags": 0,
+              "Name": "Point 2",
+              "Position": "-48,0,0.000005682076",
+              "Enabled": true
+            }
+          ]
+        },
+        {
+          "__guid": "77574892-39e0-46d7-93f1-d4c96a299b34",
+          "Flags": 0,
+          "Name": "Top",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.LineRenderer",
+              "__guid": "cf2c40e6-7590-4412-a94a-c35e8d3321f1",
+              "Color": {
+                "color": [
+                  {
+                    "t": 0.5,
+                    "c": "1,1,1,1"
+                  }
+                ],
+                "alpha": []
+              },
+              "EndCap": "Rounded",
+              "Opaque": false,
+              "Points": [
+                {
+                  "_type": "gameobject",
+                  "go": "1bbfaaa0-fc73-4ff1-a4e1-b4c8e369ddd2"
+                },
+                {
+                  "_type": "gameobject",
+                  "go": "a04e7aa6-a1b9-4a55-b32e-a732fbfd1d5b"
+                }
+              ],
+              "SplineBias": 0,
+              "SplineContinuity": 0,
+              "SplineInterpolation": 8,
+              "SplineTension": 0,
+              "StartCap": "Rounded",
+              "UseVectorPoints": false,
+              "VectorPoints": [],
+              "Width": [
+                {
+                  "y": 1
+                }
+              ],
+              "Wireframe": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "596cdfc6-6958-4b29-ae8a-7f519a5f5b96",
+              "Flags": 0,
+              "Name": "Point 1",
+              "Position": "16,64,-0.0000003869255",
+              "Enabled": true
+            },
+            {
+              "__guid": "6aa5ecf7-04f1-4460-a3d7-01f69c0e55d5",
+              "Flags": 0,
+              "Name": "Point 2",
+              "Position": "16,-32,-0.00000196401",
+              "Enabled": true
+            }
+          ]
+        },
+        {
+          "__guid": "0520cbd7-9011-42f8-8ae8-f2d2361e78bd",
+          "Flags": 0,
+          "Name": "Bottom",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.LineRenderer",
+              "__guid": "fc585f34-917c-457a-ac34-aac7cb362987",
+              "Color": {
+                "color": [
+                  {
+                    "t": 0.5,
+                    "c": "1,1,1,1"
+                  }
+                ],
+                "alpha": []
+              },
+              "EndCap": "Rounded",
+              "Opaque": false,
+              "Points": [
+                {
+                  "_type": "gameobject",
+                  "go": "596cdfc6-6958-4b29-ae8a-7f519a5f5b96"
+                },
+                {
+                  "_type": "gameobject",
+                  "go": "6aa5ecf7-04f1-4460-a3d7-01f69c0e55d5"
+                }
+              ],
+              "SplineBias": 0,
+              "SplineContinuity": 0,
+              "SplineInterpolation": 8,
+              "SplineTension": 0,
+              "StartCap": "Rounded",
+              "UseVectorPoints": false,
+              "VectorPoints": [],
+              "Width": [
+                {
+                  "y": 1
+                }
+              ],
+              "Wireframe": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "731a95e2-63f3-4164-8148-01cce1cf6005",
+              "Flags": 0,
+              "Name": "Point 1",
+              "Position": "-16,64,-0.000000004400135",
+              "Enabled": true
+            },
+            {
+              "__guid": "e8c6ab66-5368-47ee-87ae-8c0a25d7e243",
+              "Flags": 0,
+              "Name": "Point 2",
+              "Position": "-16,-32,0.000007704137",
+              "Enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "1942f584-7da9-42ad-91d4-031ad609c6b2",
+      "Flags": 0,
+      "Name": "Squares",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "c4cfbc09-f6e9-4dfd-ac19-7db4a4224026",
+          "Flags": 0,
+          "Name": "0",
+          "Position": "32,32,-0.00001630038",
+          "Enabled": true,
+          "__Prefab": "prefabs/square.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "3a946dc0-e499-4b5f-8191-27fff0bb2f8d",
+          "Flags": 0,
+          "Name": "1",
+          "Position": "32,0,-0.00001630038",
+          "Enabled": true,
+          "__Prefab": "prefabs/square.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "5862ad22-88e7-44ed-96a0-8e23477200a2",
+          "Flags": 0,
+          "Name": "2",
+          "Position": "32,-32,-0.00001630038",
+          "Enabled": true,
+          "__Prefab": "prefabs/square.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "ccb4c9bd-0f87-4e35-a63b-bc6b5fb82469",
+          "Flags": 0,
+          "Name": "3",
+          "Position": "0,32,-0.00001867043",
+          "Enabled": true,
+          "__Prefab": "prefabs/square.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "37803fad-69e0-4c32-ad91-5f8f9c9c064c",
+          "Flags": 0,
+          "Name": "4",
+          "Enabled": true,
+          "__Prefab": "prefabs/square.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "aeddf80c-217e-4cb7-ade2-997ebe7f2a39",
+          "Flags": 0,
+          "Name": "5",
+          "Position": "0,-32,0",
+          "Enabled": true,
+          "__Prefab": "prefabs/square.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "827a3d36-38eb-4f5a-89e0-9f9c8b6f68aa",
+          "Flags": 0,
+          "Name": "6",
+          "Position": "-32,32,-0.000001873634",
+          "Enabled": true,
+          "__Prefab": "prefabs/square.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "69bf63f7-32f6-4ec3-add0-64e10766eb1d",
+          "Flags": 0,
+          "Name": "7",
+          "Position": "-32,0,-0.000001873634",
+          "Enabled": true,
+          "__Prefab": "prefabs/square.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a5e52ba3-ae5d-41f3-9756-97b0153bec41",
+          "Flags": 0,
+          "Name": "8",
+          "Position": "-32,-32,-0.000001873634",
+          "Enabled": true,
+          "__Prefab": "prefabs/square.prefab",
+          "__PrefabVariables": {}
+        }
+      ]
+    },
+    {
+      "__guid": "241870f8-f750-49b6-b85f-477a59c1f086",
+      "Flags": 0,
+      "Name": "Win",
+      "Position": "0.00002007114,-0.00001244174,63.99999",
+      "Rotation": "-0.0000001685874,-0.7071068,-0.0000001067701,-0.7071068",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "e1f5eb50-3e2d-41b5-a9f7-6b44e9d85f84",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        },
+        {
+          "__type": "WinScreen",
+          "__guid": "184dc2c7-df9e-4c4e-92fd-73492f79bd9b",
+          "Text": ""
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "minimal",
+  "Description": "",
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

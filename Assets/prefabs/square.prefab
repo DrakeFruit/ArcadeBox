@@ -1,0 +1,57 @@
+{
+  "RootObject": {
+    "__guid": "c4cfbc09-f6e9-4dfd-ac19-7db4a4224026",
+    "Flags": 0,
+    "Name": "square",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.PlaneCollider",
+        "__guid": "fb95f67d-3f10-4ea9-ac94-63c815493070",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "32,32",
+        "Static": true
+      },
+      {
+        "__type": "GridSquare",
+        "__guid": "6bfe1394-1f23-4664-a73a-2487c1af82a8",
+        "Renderer": {
+          "_type": "component",
+          "component_id": "be44a663-512c-446a-b125-5207b88e6b2c",
+          "go": "19182f90-b7db-4bde-8068-c945feed0cc5",
+          "component_type": "TextRenderer"
+        }
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "19182f90-b7db-4bde-8068-c945feed0cc5",
+        "Flags": 0,
+        "Name": "Text",
+        "Rotation": "0,0.7071068,0,0.7071068",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.TextRenderer",
+            "__guid": "be44a663-512c-446a-b125-5207b88e6b2c",
+            "Color": "1,1,1,1",
+            "FontFamily": "Poppins",
+            "FontSize": 800,
+            "FontWeight": 800,
+            "Scale": 0.045,
+            "Text": "",
+            "TextAlignment": "Center"
+          }
+        ]
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

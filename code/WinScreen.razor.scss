@@ -1,0 +1,20 @@
+WinScreen
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+
+	.win
+	{
+		font-size: 200px;
+		font-family: Poppins;
+		color: #36e1ff;
+		border-radius: 20px;
+		border-color: black;
+	}
+}
