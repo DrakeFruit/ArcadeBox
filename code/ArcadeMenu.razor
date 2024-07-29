@@ -1,0 +1,22 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="title">Arcade Box</div>
+	<div class="games">
+		<div class="button" onclick=@( () => LoadGame("scenes/pong.scene"))>Pong</div>
+		<div class="button" onclick=@( () => LoadGame("scenes/tictactoe.scene"))>Tic Tac Toe</div>
+	</div>
+</root>
+
+@code
+{
+	protected void LoadGame( string scene )
+	{
+		Game.ActiveScene.LoadFromFile( scene );
+
+		var go = new GameObject(true, "Return To Menu");
+        go.Components.Create<ReturnToMenu>();
+	}
+}

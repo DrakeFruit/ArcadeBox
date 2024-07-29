@@ -1,0 +1,66 @@
+{
+  "RootObject": {
+    "__guid": "f3dcdbcf-52d6-432b-9abf-c6e7a3284a14",
+    "Flags": 0,
+    "Name": "pongball",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "PongBall",
+        "__guid": "1cc6ae49-7689-4999-9208-28fe17146a87"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "ab097aec-a9d2-4beb-bfcd-2f59a919540d",
+        "Flags": 0,
+        "Name": "Renderer",
+        "Position": "-0.2480657,1.49131,-0.00000001478586",
+        "Rotation": "-0.4999999,0.5,0.5,0.5000001",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.TextRenderer",
+            "__guid": "ef5ef338-223b-477f-ba9d-171f9910cf69",
+            "Color": "1,1,1,1",
+            "FontFamily": "Poppins",
+            "FontSize": 300,
+            "FontWeight": 800,
+            "Scale": 0.09,
+            "Text": "\u2B24",
+            "TextAlignment": "Center"
+          }
+        ]
+      },
+      {
+        "__guid": "045d8489-6e4d-4296-8cb5-c7578e5cf844",
+        "Flags": 0,
+        "Name": "Collider",
+        "Position": "-0.06201578,-0.06201554,-0.000000003696429",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.HullCollider",
+            "__guid": "5efb7d14-6498-432c-a30c-e7371b709a1a",
+            "BoxSize": "50,50,50",
+            "Center": "0,0,0",
+            "Height": 5,
+            "IsTrigger": false,
+            "Radius": 11.5,
+            "Radius2": 0,
+            "Slices": 15,
+            "Static": false,
+            "Type": "Cylinder"
+          }
+        ]
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

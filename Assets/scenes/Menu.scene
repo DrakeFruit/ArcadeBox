@@ -1,0 +1,1592 @@
+{
+  "__guid": "8c9a9169-120f-4afe-8551-9526577e22b7",
+  "GameObjects": [
+    {
+      "__guid": "a00937c9-d8cd-4333-bfec-723a714bc6d0",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "-76,0,21.60807",
+      "Rotation": "0,0.01442115,0,0.9998959",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "6bb872c3-f79e-486f-8ecd-797aedf4be26",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 40.04,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        },
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "706445a9-2771-41bb-a2b5-188de7295224",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        },
+        {
+          "__type": "ArcadeMenu",
+          "__guid": "e7381776-81b9-4a8a-bcc3-a3c8ce2c2892"
+        }
+      ]
+    },
+    {
+      "__guid": "b6073188-a1ce-4e74-93c0-01b63fdcccd3",
+      "Flags": 0,
+      "Name": "Volumetric Fog",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.VolumetricFogVolume",
+          "__guid": "4e8cedc5-02f2-4028-a4db-29667a6fcccc",
+          "Bounds": {
+            "Mins": "-1500,-1500,-1500",
+            "Maxs": "1500,1500,1500"
+          },
+          "FalloffExponent": 1,
+          "Strength": 0.04
+        }
+      ]
+    },
+    {
+      "__guid": "c3ab117e-2fd8-4283-8ec3-e58ef3932e56",
+      "Flags": 0,
+      "Name": "Envmap Probe",
+      "Position": "0,0,64",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.EnvmapProbe",
+          "__guid": "38b18a65-ebd2-4938-b726-a5616e759877",
+          "Texture": "textures/cubemaps/default2.vtex",
+          "Bounds": {
+            "Mins": "-1000,-1000,-1000",
+            "Maxs": "1000,1000,1000"
+          },
+          "DelayBetweenUpdates": 0.1,
+          "Feathering": 0.02,
+          "FrameInterval": 5,
+          "MaxDistance": 512,
+          "Projection": "Box",
+          "RenderDynamically": true,
+          "TintColor": "1,1,1,1",
+          "UpdateStrategy": "TimeInterval",
+          "ZFar": 4096,
+          "ZNear": 16
+        },
+        {
+          "__type": "Sandbox.AmbientLight",
+          "__guid": "88c5b1fd-c8bb-43a3-865e-d061074e1ee9",
+          "Color": "0.28651,0,0.4093,0.01"
+        }
+      ]
+    },
+    {
+      "__guid": "e5dfaf3d-2122-4bc6-a73e-641789819913",
+      "Flags": 0,
+      "Name": "Room",
+      "Position": "0,0,64",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "412c1c4b-5a3a-4222-80b4-241d0181d238",
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2Qiw6CUAxDh1flgg/wAfr/X2pP0iWLJA25W9t16xHxFc4C30E4\u002Bt2FWbgKd2Ew4NTvIZxcb9ZH4b5db\u002Bb9z/oUzVh8m7lPc9FOzjRYQ8ZXyXxxXvrw4e72wvtWdoEPdzMXj8We9OHDXcvO7EqdN396eKaeLHjkLciePeYxi4z0mMFtMisablFvRXZ2Tj158KQOF78f9WSROMQBAAA=",
+            "Positions": [
+              "512,256,-64",
+              "-128,256,-64",
+              "-128,-256,-64",
+              "512,-256,-64",
+              "512,-256,64",
+              "-128,-256,64",
+              "-128,256,64",
+              "512,256,64"
+            ],
+            "TextureCoord": [
+              "-1,-2",
+              "8,0.125",
+              "-1,2",
+              "4,0.125",
+              "4,2",
+              "2.999984,0.125",
+              "4,-2",
+              "4.999991,0.125",
+              "-1,2",
+              "-7.000011,-1.875",
+              "-1,-2",
+              "-3.999999,-1.875",
+              "4,-2",
+              "-2,-1.875",
+              "4,2",
+              "-3.000003,-1.875",
+              "-3.000003,0.125",
+              "8,-1.875",
+              "4.999991,-1.875",
+              "-7.000011,0.125",
+              "4,-1.875",
+              "-2,0.125",
+              "-3.999999,0.125",
+              "2.999984,-1.875"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,-0,0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,-0",
+              "-0,-1,-0",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "1,1",
+              "0.03125002,0.03125",
+              "0.03125,0.03125",
+              "0.03125001,0.03125",
+              "0.03125,0.03125"
+            ],
+            "TextureOffset": [
+              "0,0",
+              "0,0",
+              "2047.987,256",
+              "0.0009765625,256",
+              "2047.969,256",
+              "0,256"
+            ],
+            "MaterialIndex": [
+              1,
+              5,
+              3,
+              3,
+              3,
+              3
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat",
+              "materials/floors/carpet01_neon_movie.vmat",
+              "materials/walls/wall_1.vmat",
+              "materials/walls/wall_4.vmat",
+              "materials/office_ceiling/office_ceiling.vmat",
+              "plafon.vmat",
+              "materials/dev/primary_white_emissive.vmat"
+            ]
+          },
+          "SmoothingAngle": 40,
+          "Static": true
+        }
+      ]
+    },
+    {
+      "__guid": "622e76e5-555b-4832-930b-0178c0ee91f5",
+      "Flags": 0,
+      "Name": "Purple Light",
+      "Position": "396,0,127.9358",
+      "Rotation": "0,0.9999999,0,0",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "462599db-e950-4477-a830-8e8c05d51be0",
+          "BodyGroups": 18446744073709551615,
+          "CreateBoneObjects": false,
+          "Model": "models/neon_purple.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "aaa49cb6-24f4-4fcc-b2da-0d73eafe14de",
+          "IsTrigger": false,
+          "Model": "models/neon_purple.vmdl",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "48795f3e-9419-4309-bb8d-1b7d14b691f6",
+          "Flags": 0,
+          "Name": "Spot Light",
+          "Position": "0.7869266,0.3933401,11.45434",
+          "Rotation": "0,-0.2975606,0,0.954703",
+          "Tags": "light_spot,light,light_point",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SpotLight",
+              "__guid": "363df09c-4ffc-4860-83c4-baa0364783c8",
+              "Attenuation": 1,
+              "ConeInner": 35,
+              "ConeOuter": 41.84,
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.65116,0.16279,1,1",
+              "Radius": 1024,
+              "Shadows": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "761b545a-4911-4f07-9d65-c8fb05a3ae8c",
+      "Flags": 0,
+      "Name": "Cabinets",
+      "Position": "416.6751,-43.13736,38.71234",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "367c1f97-b751-47e1-805e-3a14df9f9a0c",
+          "Flags": 0,
+          "Name": "cabinet",
+          "Position": "79.32492,51.13736,-38.71233",
+          "Rotation": "0,0,-0.9997077,-0.02417739",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "a1de3abc-673f-4e20-b396-0d2e347a20df",
+              "BodyGroups": 18446744073709551615,
+              "CreateBoneObjects": false,
+              "MaterialGroup": "tetros",
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "32d047c6-3ec0-4290-a35b-30d4a3e78249",
+              "IsTrigger": false,
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "Static": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "9d1b6439-88eb-4964-8385-b1707aad756f",
+              "Flags": 0,
+              "Name": "Screen",
+              "Position": "13.25516,-0.000005161749,55.47702",
+              "Rotation": "0.4624001,0.4624,0.5349637,0.5349638",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.MeshComponent",
+                  "__guid": "64a25f25-f208-4d21-b59f-ae1540a3fd0c",
+                  "Collision": "Mesh",
+                  "Color": "1,1,1,1",
+                  "HideInGame": false,
+                  "IsTrigger": false,
+                  "Mesh": {
+                    "Topology": "H4sIAAAAAAAACk2MAQoAIAgDrSz7/4drBwoOjmKbczO7Ygg0hYuTHuB1hXgS/so\u002Bqi4vOdnOrb6NT15bJXy63JDz/\u002Bg6SXigAAAA",
+                    "Positions": [
+                      "-16,-12,0",
+                      "16,-12,0",
+                      "16,16.41524,-0.00007891655",
+                      "-16,16.41524,-0.00008368492"
+                    ],
+                    "TextureCoord": [
+                      "0.125,0.09375",
+                      "0,0",
+                      "0.125,-0.128244",
+                      "0,0",
+                      "-0.125,-0.128244",
+                      "0,0",
+                      "-0.125,0.09375",
+                      "0,0"
+                    ],
+                    "TextureUAxis": [
+                      "-0.04834173,-0.9988309,0.00000008987254"
+                    ],
+                    "TextureVAxis": [
+                      "-0.1445789,0.006997379,-0.9894686"
+                    ],
+                    "TextureScale": [
+                      "0.2500001,0.2500001"
+                    ],
+                    "TextureOffset": [
+                      "127.8725,498.517"
+                    ],
+                    "MaterialIndex": [
+                      1
+                    ],
+                    "EdgeFlags": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "Materials": [
+                      "materials/dev/reflectivity_30.vmat",
+                      "materials/dev/primary_white_emissive.vmat"
+                    ]
+                  },
+                  "SmoothingAngle": 40,
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "799b1be9-623e-4a2e-9ea7-36e2ea7712f7",
+              "Flags": 0,
+              "Name": "Point Light",
+              "Position": "17.18716,0.00002000995,58.43023",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "915755c9-9715-4277-8232-c91329264228",
+                  "Attenuation": 4.45,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0.91373,0.98039,1,1",
+                  "Radius": 59.2,
+                  "Shadows": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "5ad7bc79-1924-4363-99f9-6bd775b29ae5",
+          "Flags": 0,
+          "Name": "cabinet (3)",
+          "Position": "79.32492,199.1374,-38.71233",
+          "Rotation": "0,0,-0.9997077,-0.02417739",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "9ba7150a-d9d5-4374-97b9-bad6d27abb1a",
+              "BodyGroups": 18446744073709551615,
+              "CreateBoneObjects": false,
+              "MaterialGroup": "tetros",
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "b36a880a-1473-4f7c-a63f-403b389ac25b",
+              "IsTrigger": false,
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "56eb4e22-13d2-47ad-afc1-55ab3bb73468",
+          "Flags": 0,
+          "Name": "cabinet (1)",
+          "Position": "79.27411,124.5827,-38.71233",
+          "Rotation": "0,0,-0.9998311,0.01837848",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "f640414b-0fc5-4026-a4a6-195ceacd8b06",
+              "BodyGroups": 18446744073709551615,
+              "CreateBoneObjects": false,
+              "MaterialGroup": "snek",
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "34c4f207-0821-4133-a86d-f9d770c233e1",
+              "IsTrigger": false,
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "Static": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "bd0a3bd8-69ab-4dd0-a8f6-f84deef28689",
+              "Flags": 0,
+              "Name": "Screen",
+              "Position": "13.25516,-0.000005161749,55.47702",
+              "Rotation": "0.4624001,0.4624,0.5349637,0.5349638",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.MeshComponent",
+                  "__guid": "d5cbe1f4-5d5e-4e8a-95d3-ceb24450c6b1",
+                  "Collision": "Mesh",
+                  "Color": "0,0.63721,0.07434,1",
+                  "HideInGame": false,
+                  "IsTrigger": false,
+                  "Mesh": {
+                    "Topology": "H4sIAAAAAAAACk2MAQoAIAgDrSz7/4drBwoOjmKbczO7Ygg0hYuTHuB1hXgS/so\u002Bqi4vOdnOrb6NT15bJXy63JDz/\u002Bg6SXigAAAA",
+                    "Positions": [
+                      "-16,-12,0",
+                      "16,-12,0",
+                      "16,16.41524,-0.00007891655",
+                      "-16,16.41524,-0.00008368492"
+                    ],
+                    "TextureCoord": [
+                      "0.125,0.09375",
+                      "0,0",
+                      "0.125,-0.128244",
+                      "0,0",
+                      "-0.125,-0.128244",
+                      "0,0",
+                      "-0.125,0.09375",
+                      "0,0"
+                    ],
+                    "TextureUAxis": [
+                      "0.03674984,-0.9993245,0.000000002328305"
+                    ],
+                    "TextureVAxis": [
+                      "-0.1446498,-0.005319452,-0.9894686"
+                    ],
+                    "TextureScale": [
+                      "0.25,0.2500001"
+                    ],
+                    "TextureOffset": [
+                      "252.6571,500.5852"
+                    ],
+                    "MaterialIndex": [
+                      1
+                    ],
+                    "EdgeFlags": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "Materials": [
+                      "materials/dev/reflectivity_30.vmat",
+                      "materials/dev/primary_white_emissive.vmat"
+                    ]
+                  },
+                  "SmoothingAngle": 40,
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "2e03268e-a5cc-4690-82c9-cdc495b22b5d",
+              "Flags": 0,
+              "Name": "Point Light",
+              "Position": "17.18716,0.00002000995,58.43023",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "1562d5e3-4c9f-479e-aa52-3c46fe2da53c",
+                  "Attenuation": 4.45,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0,0.63922,0.07451,1",
+                  "Radius": 59.2,
+                  "Shadows": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "9ed2c7b6-c41a-4aad-b42b-507436684bf1",
+          "Flags": 0,
+          "Name": "cabinet (5)",
+          "Position": "79.27411,273.4443,-38.71233",
+          "Rotation": "0,0,-0.9998311,0.01837848",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "044956cf-61e0-42c1-bf39-7c5a056d16d4",
+              "BodyGroups": 18446744073709551615,
+              "CreateBoneObjects": false,
+              "MaterialGroup": "snek",
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "eac41415-578b-41a5-85ae-3560ee2bb73c",
+              "IsTrigger": false,
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "Static": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "11b746ef-a456-439b-98ad-73c827ca0306",
+              "Flags": 0,
+              "Name": "Screen",
+              "Position": "13.25516,-0.000005161749,55.47702",
+              "Rotation": "0.4624001,0.4624,0.5349637,0.5349638",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.MeshComponent",
+                  "__guid": "862e028a-b400-4c85-8668-429217883b41",
+                  "Collision": "Mesh",
+                  "Color": "0,0.63721,0.07434,1",
+                  "HideInGame": false,
+                  "IsTrigger": false,
+                  "Mesh": {
+                    "Topology": "H4sIAAAAAAAACk2MAQoAIAgDrSz7/4drBwoOjmKbczO7Ygg0hYuTHuB1hXgS/so\u002Bqi4vOdnOrb6NT15bJXy63JDz/\u002Bg6SXigAAAA",
+                    "Positions": [
+                      "-16,-12,0",
+                      "16,-12,0",
+                      "16,16.41524,-0.00007891655",
+                      "-16,16.41524,-0.00008368492"
+                    ],
+                    "TextureCoord": [
+                      "0.125,0.09375",
+                      "0,0",
+                      "0.125,-0.128244",
+                      "0,0",
+                      "-0.125,-0.128244",
+                      "0,0",
+                      "-0.125,0.09375",
+                      "0,0"
+                    ],
+                    "TextureUAxis": [
+                      "0.03674983,-0.9993245,0.000000003725288"
+                    ],
+                    "TextureVAxis": [
+                      "-0.1446499,-0.005319451,-0.9894686"
+                    ],
+                    "TextureScale": [
+                      "0.2500001,0.2500001"
+                    ],
+                    "TextureOffset": [
+                      "335.7009,503.7527"
+                    ],
+                    "MaterialIndex": [
+                      1
+                    ],
+                    "EdgeFlags": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "Materials": [
+                      "materials/dev/reflectivity_30.vmat",
+                      "materials/dev/primary_white_emissive.vmat"
+                    ]
+                  },
+                  "SmoothingAngle": 40,
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "3c12f396-e9a0-491c-b462-b31a11f3ddc8",
+              "Flags": 0,
+              "Name": "Point Light",
+              "Position": "17.18716,0.00002000995,58.43023",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "73be921c-f949-4c81-81eb-1e8ac6af0022",
+                  "Attenuation": 4.45,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0,0.63922,0.07451,1",
+                  "Radius": 59.2,
+                  "Shadows": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "3d84f284-2f88-4558-ba53-36c7ec34a77b",
+          "Flags": 0,
+          "Name": "cabinet (2)",
+          "Position": "75.61154,-32.11599,-38.71233",
+          "Rotation": "0,0,-0.9999158,0.01297316",
+          "Scale": "1,1,0.9126752",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "9481c659-6074-4963-ba1f-1742c422044b",
+              "BodyGroups": 18446744073709551615,
+              "CreateBoneObjects": false,
+              "MaterialGroup": "default",
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "a00c934c-cf74-45f3-9f5b-036e4ed16d1b",
+              "IsTrigger": false,
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "Static": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "19d54022-4594-4ce8-8263-c10c6b4e2d4c",
+              "Flags": 0,
+              "Name": "Screen",
+              "Position": "13.41868,-0.004250228,55.5303",
+              "Rotation": "0.4610063,0.4610766,0.5361046,0.5361654",
+              "Scale": "1,1,1.09568",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.MeshComponent",
+                  "__guid": "1bcfeb1f-266d-4ccf-a1e1-6125decee582",
+                  "Collision": "Mesh",
+                  "Color": "0.03721,0.26186,1,1",
+                  "HideInGame": false,
+                  "IsTrigger": false,
+                  "Mesh": {
+                    "Topology": "H4sIAAAAAAAACk2MAQoAIAgDrSz7/4drBwoOjmKbczO7Ygg0hYuTHuB1hXgS/so\u002Bqi4vOdnOrb6NT15bJXy63JDz/\u002Bg6SXigAAAA",
+                    "Positions": [
+                      "-16,-12,0",
+                      "16,-12,0",
+                      "16,16.41524,-0.00007202516",
+                      "-16,16.41524,-0.00007637716"
+                    ],
+                    "TextureCoord": [
+                      "0.125,0.09375",
+                      "0,0",
+                      "0.125,-0.128244",
+                      "0,0",
+                      "-0.125,-0.128244",
+                      "0,0",
+                      "-0.125,0.09375",
+                      "0,0"
+                    ],
+                    "TextureUAxis": [
+                      "0.02594377,-0.9996635,-0.0001312916"
+                    ],
+                    "TextureVAxis": [
+                      "-0.1497191,-0.003755653,-0.9887214"
+                    ],
+                    "TextureScale": [
+                      "0.25,0.25"
+                    ],
+                    "TextureOffset": [
+                      "160.0443,486.0879"
+                    ],
+                    "MaterialIndex": [
+                      1
+                    ],
+                    "EdgeFlags": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "Materials": [
+                      "materials/dev/reflectivity_30.vmat",
+                      "materials/dev/primary_white_emissive.vmat"
+                    ]
+                  },
+                  "SmoothingAngle": 40,
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "6ce18003-90c3-4f10-9de5-92d4ad8e4a78",
+              "Flags": 0,
+              "Name": "Point Light",
+              "Position": "17.18716,0.00002000995,58.43023",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "f794b186-0cf2-4615-a335-fff2a65b92bd",
+                  "Attenuation": 4.45,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0.03529,0.26275,1,1",
+                  "Radius": 59.2,
+                  "Shadows": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "9962c519-f152-4cdb-b3d4-cecd95c47444",
+          "Flags": 0,
+          "Name": "cabinet (4)",
+          "Position": "75.61151,-110.7462,-38.71233",
+          "Rotation": "0,0,-0.9992115,-0.03970147",
+          "Scale": "1,1,0.9126752",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "1c9fd999-16bb-4226-a992-714151a71a84",
+              "BodyGroups": 18446744073709551615,
+              "CreateBoneObjects": false,
+              "MaterialGroup": "default",
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "5d5718a4-8ace-4094-8843-c518294ed5bb",
+              "IsTrigger": false,
+              "Model": "models/arcade/cabinet/cabinet.vmdl",
+              "Static": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "37410fca-6ffa-4e4b-ac06-11557d98e2b9",
+              "Flags": 0,
+              "Name": "Screen",
+              "Position": "13.41868,-0.004250228,55.5303",
+              "Rotation": "0.4610063,0.4610766,0.5361046,0.5361654",
+              "Scale": "1,1,1.09568",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.MeshComponent",
+                  "__guid": "70395baa-c4ec-48c1-acc5-4c1a545c5148",
+                  "Collision": "Mesh",
+                  "Color": "0.6186,0.7076,1,1",
+                  "HideInGame": false,
+                  "IsTrigger": false,
+                  "Mesh": {
+                    "Topology": "H4sIAAAAAAAACk2MAQoAIAgDrSz7/4drBwoOjmKbczO7Ygg0hYuTHuB1hXgS/so\u002Bqi4vOdnOrb6NT15bJXy63JDz/\u002Bg6SXigAAAA",
+                    "Positions": [
+                      "-16,-12,0",
+                      "16,-12,0",
+                      "16,16.41524,-0.00007202516",
+                      "-16,16.41524,-0.00007637716"
+                    ],
+                    "TextureCoord": [
+                      "0.125,0.09375",
+                      "0,0",
+                      "0.125,-0.128244",
+                      "0,0",
+                      "-0.125,-0.128244",
+                      "0,0",
+                      "-0.125,0.09375",
+                      "0,0"
+                    ],
+                    "TextureUAxis": [
+                      "-0.07934093,-0.9968476,-0.0001313593"
+                    ],
+                    "TextureVAxis": [
+                      "-0.1492831,0.01201201,-0.9887215"
+                    ],
+                    "TextureScale": [
+                      "0.2500001,0.2500001"
+                    ],
+                    "TextureOffset": [
+                      "54.68384,493.7535"
+                    ],
+                    "MaterialIndex": [
+                      1
+                    ],
+                    "EdgeFlags": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "Materials": [
+                      "materials/dev/reflectivity_30.vmat",
+                      "materials/dev/primary_white_emissive.vmat"
+                    ]
+                  },
+                  "SmoothingAngle": 40,
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "e873d5d3-0ca7-4dff-abf7-47e3a6495139",
+              "Flags": 0,
+              "Name": "Point Light",
+              "Position": "17.18716,0.00002000995,58.43023",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "940d7e84-d4da-4557-bce3-fbb84ff74f7e",
+                  "Attenuation": 4.45,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0.61961,0.7098,1,1",
+                  "Radius": 59.2,
+                  "Shadows": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "36f1a379-c6e2-4d61-a927-1d84f524cdb8",
+          "Flags": 0,
+          "Name": "arcademachine",
+          "Position": "79.32483,163.1374,-38.62181",
+          "Rotation": "0,0,-1,0.0000001947072",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "82a6df28-1df5-4922-85af-8000982a6e4e",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sharetextures/arcademachine/arcademachine.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "bc3edfd0-cb5f-4b4c-8878-e77585a2a5e5",
+              "IsTrigger": false,
+              "Model": "models/sharetextures/arcademachine/arcademachine.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "d8d68ad4-c197-458d-8e8c-cfd841c64e19",
+          "Flags": 0,
+          "Name": "arcademachine (1)",
+          "Position": "79.32483,-70.48863,-38.62181",
+          "Rotation": "0,0,-1,0.0000001947072",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d21ae702-b26c-4d9a-b867-0524a1ac69c7",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sharetextures/arcademachine/arcademachine.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "9315a5f2-ed16-404a-80a1-7e88e2c07a2e",
+              "IsTrigger": false,
+              "Model": "models/sharetextures/arcademachine/arcademachine.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "31317a65-d99f-4224-b0af-3f1eb18a48b3",
+          "Flags": 0,
+          "Name": "arcademachine (2)",
+          "Position": "79.32483,-184.049,-38.62181",
+          "Rotation": "0,0,-1,0.0000001947072",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "f3d5166c-2d79-40f1-bf51-427085c71042",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sharetextures/arcademachine/arcademachine.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "43e0f428-82e1-45cc-bec7-848a7e4a575c",
+              "IsTrigger": false,
+              "Model": "models/sharetextures/arcademachine/arcademachine.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "ab3dc171-be46-47ae-801f-a339153da115",
+          "Flags": 0,
+          "Name": "arcade1",
+          "Position": "55.32492,87.96883,-38.7101",
+          "Rotation": "0,0,-1,0.0000001947072",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "cba6cfc7-40ae-4f3a-afb9-8399b99302d5",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/gamemodes/arcade/arcade1.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "1b83c054-9426-44bb-9d47-0254dc872c5e",
+              "IsTrigger": false,
+              "Model": "models/gamemodes/arcade/arcade1.vmdl",
+              "Static": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "0e7f43ea-05cd-4d26-886f-ec8550e146ba",
+              "Flags": 0,
+              "Name": "Screen (1)",
+              "Position": "2.458374,-0.4549952,64.32555",
+              "Rotation": "0.4784177,0.4788896,0.5225197,0.5184149",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.MeshComponent",
+                  "__guid": "92c81e1d-8ebe-426e-8928-bfd2a5959e19",
+                  "Collision": "Mesh",
+                  "Color": "0.17674,0.84907,1,1",
+                  "HideInGame": false,
+                  "IsTrigger": false,
+                  "Mesh": {
+                    "Topology": "H4sIAAAAAAAACk2MAQoAIAgDrSz7/4drBwoOjmKbczO7Ygg0hYuTHuB1hXgS/so\u002Bqi4vOdnOrb6NT15bJXy63JDz/\u002Bg6SXigAAAA",
+                    "Positions": [
+                      "-12.74254,-8.531173,0",
+                      "12.74254,-8.531173,0",
+                      "12.74254,11.67013,-0.00007891655",
+                      "-12.74254,11.67013,-0.00008368492"
+                    ],
+                    "TextureCoord": [
+                      "0.125,0.09375",
+                      "0,0",
+                      "0.125,-0.128244",
+                      "0,0",
+                      "-0.125,-0.128244",
+                      "0,0",
+                      "-0.125,0.09375",
+                      "0,0"
+                    ],
+                    "TextureUAxis": [
+                      "0.004725221,-0.9999829,0.003438633"
+                    ],
+                    "TextureVAxis": [
+                      "-0.08354935,-0.003821338,-0.9964963"
+                    ],
+                    "TextureScale": [
+                      "0.1991021,0.177733"
+                    ],
+                    "TextureOffset": [
+                      "215.1952,70.3645"
+                    ],
+                    "MaterialIndex": [
+                      1
+                    ],
+                    "EdgeFlags": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "Materials": [
+                      "materials/dev/reflectivity_30.vmat",
+                      "materials/dev/primary_white_emissive.vmat"
+                    ]
+                  },
+                  "SmoothingAngle": 40,
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "9dcda5ca-f954-4c4b-90b9-389ab1bde8d8",
+              "Flags": 0,
+              "Name": "Point Light (1)",
+              "Position": "3.489227,-0.4170393,64.5653",
+              "Rotation": "0,0,0.01837829,0.9998311",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "19642648-8c06-4665-a75f-3766e75347a3",
+                  "Attenuation": 4.45,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0.17647,0.85098,1,1",
+                  "Radius": 59.20018,
+                  "Shadows": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "ad1c02e9-d5c0-455d-b728-24ede6ee679e",
+          "Flags": 0,
+          "Name": "arcade1 (1)",
+          "Position": "55.32492,236.8304,-38.7101",
+          "Rotation": "0,0,-1,0.0000001947072",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "580bb158-707f-4b1a-8a45-bb54b7d7e142",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/gamemodes/arcade/arcade1.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "0cb90a9b-05e2-4637-9387-974a0f6eed34",
+              "IsTrigger": false,
+              "Model": "models/gamemodes/arcade/arcade1.vmdl",
+              "Static": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "cfd4f6d3-a1de-4290-9689-a00cb80fb71a",
+              "Flags": 0,
+              "Name": "Screen (1)",
+              "Position": "2.458374,-0.4549952,64.32555",
+              "Rotation": "0.4784177,0.4788896,0.5225197,0.5184149",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.MeshComponent",
+                  "__guid": "a8f575e3-c67f-4ef1-bc7c-6e8cb42fcdac",
+                  "Collision": "Mesh",
+                  "Color": "0.17674,0.84907,1,1",
+                  "HideInGame": false,
+                  "IsTrigger": false,
+                  "Mesh": {
+                    "Topology": "H4sIAAAAAAAACk2MAQoAIAgDrSz7/4drBwoOjmKbczO7Ygg0hYuTHuB1hXgS/so\u002Bqi4vOdnOrb6NT15bJXy63JDz/\u002Bg6SXigAAAA",
+                    "Positions": [
+                      "-12.74254,-8.531173,0",
+                      "12.74254,-8.531173,0",
+                      "12.74254,11.67013,-0.00007891655",
+                      "-12.74254,11.67013,-0.00008368492"
+                    ],
+                    "TextureCoord": [
+                      "0.125,0.09375",
+                      "0,0",
+                      "0.125,-0.128244",
+                      "0,0",
+                      "-0.125,-0.128244",
+                      "0,0",
+                      "-0.125,0.09375",
+                      "0,0"
+                    ],
+                    "TextureUAxis": [
+                      "0.004725205,-0.9999829,0.003438445"
+                    ],
+                    "TextureVAxis": [
+                      "-0.08354935,-0.003821338,-0.9964963"
+                    ],
+                    "TextureScale": [
+                      "0.1991021,0.177733"
+                    ],
+                    "TextureOffset": [
+                      "450.847,73.56512"
+                    ],
+                    "MaterialIndex": [
+                      1
+                    ],
+                    "EdgeFlags": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "Materials": [
+                      "materials/dev/reflectivity_30.vmat",
+                      "materials/dev/primary_white_emissive.vmat"
+                    ]
+                  },
+                  "SmoothingAngle": 40,
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "f2b944c0-d19b-4d78-bd44-546ea1ca2c3e",
+              "Flags": 0,
+              "Name": "Point Light (1)",
+              "Position": "3.489227,-0.4170393,64.5653",
+              "Rotation": "0,0,0.01837829,0.9998311",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "db4d5e3f-300c-4477-a981-fb7a732068f8",
+                  "Attenuation": 4.45,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0.17647,0.85098,1,1",
+                  "Radius": 59.20018,
+                  "Shadows": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "a1968560-6409-4846-abd4-9a966f09bf27",
+          "Flags": 0,
+          "Name": "arcade",
+          "Position": "60.02512,8.969425,-38.71235",
+          "Rotation": "0,0,-1,0.0000001947072",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "39a1c483-c796-4a13-90aa-3ff28757ef20",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/unity stuff/1/arcade/arcade.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "a0b70a20-73cb-4859-851d-e989f06c932d",
+              "IsTrigger": false,
+              "Model": "models/unity stuff/1/arcade/arcade.vmdl",
+              "Static": false
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "7cf02254-c276-4386-8aa6-718dffd52036",
+              "Flags": 0,
+              "Name": "Screen (1)",
+              "Position": "4.461609,0.3400251,61.42199",
+              "Rotation": "0.4302818,0.4337312,0.5602496,0.5593347",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.MeshComponent",
+                  "__guid": "cae7c8c7-4fe7-4b1c-a23c-1b42e21dfc10",
+                  "Collision": "Mesh",
+                  "Color": "1,0.07907,0.4014,1",
+                  "HideInGame": false,
+                  "IsTrigger": false,
+                  "Mesh": {
+                    "Topology": "H4sIAAAAAAAACk2MAQoAIAgDrSz7/4drBwoOjmKbczO7Ygg0hYuTHuB1hXgS/so\u002Bqi4vOdnOrb6NT15bJXy63JDz/\u002Bg6SXigAAAA",
+                    "Positions": [
+                      "-18.02269,-16.76407,0",
+                      "18.02269,-16.76407,0",
+                      "18.02269,22.93218,-0.00007891655",
+                      "-18.02269,22.93218,-0.00008368492"
+                    ],
+                    "TextureCoord": [
+                      "0.125,0.09375",
+                      "0,0",
+                      "0.125,-0.128244",
+                      "0,0",
+                      "-0.125,-0.128244",
+                      "0,0",
+                      "-0.125,0.09375",
+                      "0,0"
+                    ],
+                    "TextureUAxis": [
+                      "0.004004647,-0.9999872,-0.003071316"
+                    ],
+                    "TextureVAxis": [
+                      "-0.2534835,0.00195601,-0.9673378"
+                    ],
+                    "TextureScale": [
+                      "0.2816046,0.3492517"
+                    ],
+                    "TextureOffset": [
+                      "383.4154,1.062645"
+                    ],
+                    "MaterialIndex": [
+                      1
+                    ],
+                    "EdgeFlags": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "Materials": [
+                      "materials/dev/reflectivity_30.vmat",
+                      "materials/dev/primary_white_emissive.vmat"
+                    ]
+                  },
+                  "SmoothingAngle": 40,
+                  "Static": true
+                }
+              ]
+            },
+            {
+              "__guid": "ee49d688-2d7d-4fee-a481-6f808d1a7348",
+              "Flags": 0,
+              "Name": "Point Light (1)",
+              "Position": "8.040558,0.6277434,64.79153",
+              "Rotation": "-0.001373911,-0.05548076,0.002956216,0.9984548",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "e4a516cc-eb27-4c4d-a57e-c38100d575c6",
+                  "Attenuation": 4.45,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "1,0.07843,0.4,1",
+                  "Radius": 59.2,
+                  "Shadows": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "2446c475-ba93-4b72-8f57-32c25fbf2f9d",
+          "Flags": 0,
+          "Name": "ddrmachine",
+          "Position": "-56.66254,-116.8049,-38.71228",
+          "Rotation": "0,0,0.9238795,0.3826834",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ae69d6dc-9862-450b-b5ea-65b0fb5b42ae",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/carsonhome/ddrmachine.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "74168906-66a9-4af5-9d26-4db76eb9dfe9",
+              "IsTrigger": false,
+              "Model": "models/carsonhome/ddrmachine.vmdl",
+              "Static": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "8aba754b-1861-4af1-ae98-7bd11e998a42",
+      "Flags": 0,
+      "Name": "Decal",
+      "Position": "496,-81.8326,81.43243",
+      "Rotation": "0.258819,-0.00000005757366,-0.00000001542682,0.9659258",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "0bb5cfdc-c0c1-499d-98f4-db17cd1a6801",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "materials/decals/decalgraffiti001d.vmat",
+          "Mod2XBlending": false,
+          "Size": "64,64,32",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "a8c351e2-72ea-4ac5-a520-c72761c7d452",
+      "Flags": 0,
+      "Name": "Decal (1)",
+      "Position": "496,40.76305,82.38767",
+      "Rotation": "-0.9659258,0,0,0.2588191",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "271ab867-caae-4a78-8393-b25106cf77b6",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "materials/decals/decalgraffiti001d.vmat",
+          "Mod2XBlending": false,
+          "Size": "64,64,32",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "9d8e73c6-9016-4e3f-9fca-f59c80eac702",
+      "Flags": 0,
+      "Name": "Decal (2)",
+      "Position": "496,159.0906,91.31512",
+      "Rotation": "-0.4451055,0,0,0.8954782",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "129b1c7d-6a4c-46e9-a9ba-1407040e450b",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "materials/decals/decalgraffiti001d.vmat",
+          "Mod2XBlending": false,
+          "Size": "64,64,32",
+          "TintColor": "1,1,1,1",
+          "TriPlanar": false
+        }
+      ]
+    },
+    {
+      "__guid": "7aa180b6-4315-4c61-949f-5dd91d10e693",
+      "Flags": 0,
+      "Name": "Trash",
+      "Position": "226.2367,100.9572,30.49205",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "46620a64-c9e3-46a2-ac21-f3695ee68ece",
+          "Flags": 0,
+          "Name": "smodel_coin",
+          "Position": "-32.85004,-130.4107,-29.96738",
+          "Rotation": "0,0.7071067,0,0.7071068",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "6d5fd245-a2d6-4ddb-9534-fd25dacd51eb",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sterling/smodel_coin/smodel_coin.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "4ecb0de0-9cc2-4f73-8ef6-883c8e8b4caf",
+              "IsTrigger": false,
+              "Model": "models/sterling/smodel_coin/smodel_coin.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "668baefe-a5aa-49c4-b097-bac47bfcc7a2",
+          "Flags": 0,
+          "Name": "smodel_coin (1)",
+          "Position": "-35.79959,-136.8311,-28.85805",
+          "Rotation": "0.04395748,0.6460075,0.03730782,0.7611505",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "fee27ca7-2b52-49b7-bcaa-2db94a90ed68",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sterling/smodel_coin/smodel_coin.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "c98cbe49-8ea8-461d-a2a0-8ab11abe289d",
+              "IsTrigger": false,
+              "Model": "models/sterling/smodel_coin/smodel_coin.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "851939bf-3ad6-4f7c-9b86-0e69b68e594a",
+          "Flags": 0,
+          "Name": "cola_can_gib",
+          "Position": "0.120285,-3.237274,-29.98945",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ad94d894-5224-411b-a98b-fd4433ac4ab8",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/cola_can/cola_can_gib.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "ad9d87f5-d7ec-4583-8c6a-6e3527cdee93",
+              "IsTrigger": false,
+              "Model": "models/sbox_props/cola_can/cola_can_gib.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "08e41d1d-04c6-4985-8ce3-fd7304092d57",
+          "Flags": 0,
+          "Name": "cola_can",
+          "Position": "61.76328,-36.95716,-28.77591",
+          "Rotation": "0.1031391,0.6996381,-0.1155646,0.6975054",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "f5cd6d26-641c-477b-93d7-9f66c4f8186f",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/cola_can/cola_can.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "466de6b3-c375-40d7-a760-a9ef3ef33809",
+              "IsTrigger": false,
+              "Model": "models/sbox_props/cola_can/cola_can.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "ccffce33-1053-449c-b762-b733bd3a2470",
+          "Flags": 0,
+          "Name": "trash_pile_b_1",
+          "Position": "-114.2367,-164.9572,-30.45008",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "5f0c36d3-871b-4c72-a1a2-16a8addce615",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/trash_pile_b/trash_pile_b_1.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "menu",
+  "Description": "",
+  "ResourceVersion": 1,
+  "__references": [
+    "caro.arcade",
+    "exorealms.5b8b47a457dca6a4",
+    "facepunch.cola_can_gib",
+    "facepunch.soda_can",
+    "facepunch.trash_pile_b_1",
+    "jodiscontent.neon_purple",
+    "oleshkus.wall_1",
+    "oleshkus.wall_4",
+    "rustextended.office_ceiling",
+    "shadb.arcade_cabinet",
+    "shadb.ddrmachine",
+    "smd.dontbeweird3",
+    "titanovsky.arcademachine",
+    "trend.arcade1",
+    "whispergarden.ceiling"
+  ],
+  "__version": 1
+}

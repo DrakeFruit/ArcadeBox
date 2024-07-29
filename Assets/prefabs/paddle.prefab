@@ -1,0 +1,73 @@
+{
+  "RootObject": {
+    "__guid": "e321a290-fcae-43a8-ac12-9790fbd9b287",
+    "Flags": 0,
+    "Name": "paddle",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "PaddleController",
+        "__guid": "fb89fdb6-d255-46e8-9625-37ae0cef2d05",
+        "Speed": 10
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "b5b7a0a7-43b5-4567-b546-3f08ac35ea9c",
+        "Flags": 0,
+        "Name": "Render",
+        "Rotation": "0.4999999,0.5,-0.5,0.5000001",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.TextRenderer",
+            "__guid": "89b25020-bfc1-4ee7-b460-4300c2afb9ff",
+            "Color": "1,1,1,1",
+            "FontFamily": "Poppins",
+            "FontSize": 300,
+            "FontWeight": 500,
+            "Scale": 0.46,
+            "Text": "|",
+            "TextAlignment": "Center"
+          }
+        ]
+      },
+      {
+        "__guid": "84bc7af0-eb5c-4176-9273-bcd9ac5d4728",
+        "Flags": 0,
+        "Name": "Collider",
+        "Position": "-0.8779451,0.1245822,0",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.BoxCollider",
+            "__guid": "1254d838-7cf8-4034-9254-f5dd11730b11",
+            "Center": "0,0,0",
+            "IsTrigger": false,
+            "Scale": "127,16.39991,5",
+            "Static": false
+          }
+        ]
+      }
+    ],
+    "__variables": [
+      {
+        "Id": "Speed",
+        "Title": "Speed",
+        "Targets": [
+          {
+            "Id": "fb89fdb6-d255-46e8-9625-37ae0cef2d05",
+            "Property": "Speed"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

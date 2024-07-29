@@ -32,55 +32,55 @@
           "Squares": [
             {
               "_type": "component",
-              "component_id": "b5e76b75-66ba-470c-9343-7ded4df5d6dd",
+              "component_id": "81cd37a1-8f4f-48c2-8851-70fa44484290",
               "go": "c4cfbc09-f6e9-4dfd-ac19-7db4a4224026",
               "component_type": "GridSquare"
             },
             {
               "_type": "component",
-              "component_id": "6fbdff2d-83e0-4a1c-9755-8288163c5d72",
+              "component_id": "71f8fcd1-28e8-422c-a8c7-257e9e5cb123",
               "go": "3a946dc0-e499-4b5f-8191-27fff0bb2f8d",
               "component_type": "GridSquare"
             },
             {
               "_type": "component",
-              "component_id": "9be5b571-d0c2-4c32-b684-a83b8977801d",
+              "component_id": "c7f2e92d-af61-442c-8d6e-b84ccb73196a",
               "go": "5862ad22-88e7-44ed-96a0-8e23477200a2",
               "component_type": "GridSquare"
             },
             {
               "_type": "component",
-              "component_id": "08ec8b18-79d1-4e67-892a-29af1d6daac9",
+              "component_id": "5206963e-a907-42b5-9468-a8372b414506",
               "go": "ccb4c9bd-0f87-4e35-a63b-bc6b5fb82469",
               "component_type": "GridSquare"
             },
             {
               "_type": "component",
-              "component_id": "5dafd43c-5a0e-4560-a74f-1d7b7430badc",
+              "component_id": "143d6bd0-fb83-4337-951b-19784e8a1c92",
               "go": "37803fad-69e0-4c32-ad91-5f8f9c9c064c",
               "component_type": "GridSquare"
             },
             {
               "_type": "component",
-              "component_id": "7f9c762d-c785-47a9-8892-99bdc6f3ef27",
+              "component_id": "27e51287-e7fa-4ac9-9c46-fdbfb8db03b6",
               "go": "aeddf80c-217e-4cb7-ade2-997ebe7f2a39",
               "component_type": "GridSquare"
             },
             {
               "_type": "component",
-              "component_id": "32b94b3d-4139-4721-8d55-731a3d7de53a",
+              "component_id": "c2ccb921-aca5-4533-978c-f7856f10f5f4",
               "go": "827a3d36-38eb-4f5a-89e0-9f9c8b6f68aa",
               "component_type": "GridSquare"
             },
             {
               "_type": "component",
-              "component_id": "a871f348-a3bd-417f-af7a-745a80ffb6ba",
+              "component_id": "23875489-c141-4e3c-a5f5-bf6e0ca49db8",
               "go": "69bf63f7-32f6-4ec3-add0-64e10766eb1d",
               "component_type": "GridSquare"
             },
             {
               "_type": "component",
-              "component_id": "f07d51cd-f287-4b24-ad47-47c5f1c0c13a",
+              "component_id": "8a7f12f7-b1a8-4a1a-b5e7-14cec7cc4857",
               "go": "a5e52ba3-ae5d-41f3-9756-97b0153bec41",
               "component_type": "GridSquare"
             }
