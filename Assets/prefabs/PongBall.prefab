@@ -7,7 +7,8 @@
     "Components": [
       {
         "__type": "PongBall",
-        "__guid": "1cc6ae49-7689-4999-9208-28fe17146a87"
+        "__guid": "1cc6ae49-7689-4999-9208-28fe17146a87",
+        "Speed": 650
       }
     ],
     "Children": [
@@ -55,7 +56,18 @@
         ]
       }
     ],
-    "__variables": []
+    "__variables": [
+      {
+        "Id": "Speed",
+        "Title": "Speed",
+        "Targets": [
+          {
+            "Id": "1cc6ae49-7689-4999-9208-28fe17146a87",
+            "Property": "Speed"
+          }
+        ]
+      }
+    ]
   },
   "ShowInMenu": false,
   "MenuPath": null,
