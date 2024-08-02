@@ -18,7 +18,7 @@
           "FieldOfView": 60,
           "IsMainCamera": true,
           "Orthographic": true,
-          "OrthographicHeight": 800,
+          "OrthographicHeight": 791.30084,
           "Priority": 1,
           "RenderExcludeTags": "",
           "RenderTags": "",
@@ -78,7 +78,335 @@
       "Name": "Ball",
       "Enabled": true,
       "__Prefab": "prefabs/pongball.prefab",
-      "__PrefabVariables": {}
+      "__PrefabVariables": {
+        "Speed": 650
+      }
+    },
+    {
+      "__guid": "cabd768f-2870-4536-9799-7b5b04e75bde",
+      "Flags": 0,
+      "Name": "Sun",
+      "Position": "0,0,640",
+      "Rotation": "0,0.7071067,0,0.7071068",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "192a2bb2-b161-4444-9719-f8379fea1eca",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0,0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "cf04bfa6-9de7-487f-9cda-3f0898ff6e92",
+      "Flags": 0,
+      "Name": "Walls",
+      "Position": "-1400.008,159.3145,1628.284",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "55834151-68ce-41e0-90a6-bf5ced9334ba",
+          "Flags": 0,
+          "Name": "Edges",
+          "Position": "1408.008,262.8723,-1626.284",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.MeshComponent",
+              "__guid": "687423e2-a640-4f27-b21d-682f4c102617",
+              "Collision": "Mesh",
+              "Color": "1,1,1,0",
+              "HideInGame": false,
+              "IsTrigger": false,
+              "Mesh": {
+                "Topology": "H4sIAAAAAAAACl2Qiw6CUAxDh1flgg/wAfr/X2pP0iWLJA25W9t16xHxFc4C30E4\u002Bt2FWbgKd2Ew4NTvIZxcb9ZH4b5db\u002Bb9z/oUzVh8m7lPc9FOzjRYQ8ZXyXxxXvrw4e72wvtWdoEPdzMXj8We9OHDXcvO7EqdN396eKaeLHjkLciePeYxi4z0mMFtMisablFvRXZ2Tj158KQOF78f9WSROMQBAAA=",
+                "Positions": [
+                  "-760,-25.81323,14",
+                  "760,-25.81323,14",
+                  "760,25.81323,14",
+                  "-760,25.81323,14",
+                  "-760,25.81323,-14",
+                  "760,25.81323,-14",
+                  "760,-25.81323,-14",
+                  "-760,-25.81323,-14"
+                ],
+                "TextureCoord": [
+                  "5.9375,0.2016659",
+                  "-5.9375,-0.109375",
+                  "5.9375,-0.2016659",
+                  "-0.2016659,-0.109375",
+                  "-5.9375,-0.2016659",
+                  "-5.9375,-0.109375",
+                  "-5.9375,0.2016659",
+                  "-0.2016659,-0.109375",
+                  "5.9375,-0.2016659",
+                  "5.9375,0.109375",
+                  "5.9375,0.2016659",
+                  "0.2016659,0.109375",
+                  "-5.9375,0.2016659",
+                  "5.9375,0.109375",
+                  "-5.9375,-0.2016659",
+                  "0.2016659,0.109375",
+                  "0.2016659,-0.109375",
+                  "-5.9375,0.109375",
+                  "-0.2016659,0.109375",
+                  "5.9375,-0.109375",
+                  "-0.2016659,0.109375",
+                  "5.9375,-0.109375",
+                  "0.2016659,-0.109375",
+                  "-5.9375,0.109375"
+                ],
+                "TextureUAxis": [
+                  "1,0,0",
+                  "1,0,-0",
+                  "0,-1,0",
+                  "0,1,0",
+                  "-1,0,0",
+                  "1,-0,0"
+                ],
+                "TextureVAxis": [
+                  "0,-1,0",
+                  "0,-1,0",
+                  "0,0,-1",
+                  "-0,0,-1",
+                  "0,0,-1",
+                  "-0,0,-1"
+                ],
+                "TextureScale": [
+                  "0.25,0.25",
+                  "0.25,0.25",
+                  "0.25,0.25",
+                  "0.25,0.25",
+                  "0.25,0.25",
+                  "0.25,0.25"
+                ],
+                "TextureOffset": [
+                  "480,152.7476",
+                  "480,152.7476",
+                  "152.7476,8",
+                  "359.2524,8",
+                  "32,8",
+                  "480,8"
+                ],
+                "MaterialIndex": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "EdgeFlags": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "Materials": [
+                  "materials/dev/reflectivity_30.vmat"
+                ]
+              },
+              "SmoothingAngle": 40,
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "b2a4a1fa-ed28-4f9a-9bd9-ae1464d6724a",
+          "Flags": 0,
+          "Name": "Edges",
+          "Position": "1408.008,-580.6069,-1626.284",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.MeshComponent",
+              "__guid": "820a8177-79ea-4e43-a617-cb09a715a116",
+              "Collision": "Mesh",
+              "Color": "1,1,1,0",
+              "HideInGame": false,
+              "IsTrigger": false,
+              "Mesh": {
+                "Topology": "H4sIAAAAAAAACl2Qiw6CUAxDh1flgg/wAfr/X2pP0iWLJA25W9t16xHxFc4C30E4\u002Bt2FWbgKd2Ew4NTvIZxcb9ZH4b5db\u002Bb9z/oUzVh8m7lPc9FOzjRYQ8ZXyXxxXvrw4e72wvtWdoEPdzMXj8We9OHDXcvO7EqdN396eKaeLHjkLciePeYxi4z0mMFtMisablFvRXZ2Tj158KQOF78f9WSROMQBAAA=",
+                "Positions": [
+                  "-760,-25.81323,14",
+                  "760,-25.81323,14",
+                  "760,25.81323,14",
+                  "-760,25.81323,14",
+                  "-760,25.81323,-14",
+                  "760,25.81323,-14",
+                  "760,-25.81323,-14",
+                  "-760,-25.81323,-14"
+                ],
+                "TextureCoord": [
+                  "5.9375,0.2016659",
+                  "-5.9375,-0.109375",
+                  "5.9375,-0.2016659",
+                  "-0.2016659,-0.109375",
+                  "-5.9375,-0.2016659",
+                  "-5.9375,-0.109375",
+                  "-5.9375,0.2016659",
+                  "-0.2016659,-0.109375",
+                  "5.9375,-0.2016659",
+                  "5.9375,0.109375",
+                  "5.9375,0.2016659",
+                  "0.2016659,0.109375",
+                  "-5.9375,0.2016659",
+                  "5.9375,0.109375",
+                  "-5.9375,-0.2016659",
+                  "0.2016659,0.109375",
+                  "0.2016659,-0.109375",
+                  "-5.9375,0.109375",
+                  "-0.2016659,0.109375",
+                  "5.9375,-0.109375",
+                  "-0.2016659,0.109375",
+                  "5.9375,-0.109375",
+                  "0.2016659,-0.109375",
+                  "-5.9375,0.109375"
+                ],
+                "TextureUAxis": [
+                  "1,0,0",
+                  "1,0,-0",
+                  "0,-1,0",
+                  "0,1,0",
+                  "-1,0,0",
+                  "1,-0,0"
+                ],
+                "TextureVAxis": [
+                  "0,-1,0",
+                  "0,-1,0",
+                  "0,0,-1",
+                  "-0,0,-1",
+                  "0,0,-1",
+                  "-0,0,-1"
+                ],
+                "TextureScale": [
+                  "0.25,0.25",
+                  "0.25,0.25",
+                  "0.25,0.25",
+                  "0.25,0.25",
+                  "0.25,0.25",
+                  "0.25,0.25"
+                ],
+                "TextureOffset": [
+                  "480,362.8303",
+                  "480,362.8303",
+                  "362.8303,8",
+                  "149.1697,8",
+                  "32,8",
+                  "480,8"
+                ],
+                "MaterialIndex": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "EdgeFlags": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "Materials": [
+                  "materials/dev/reflectivity_30.vmat"
+                ]
+              },
+              "SmoothingAngle": 40,
+              "Static": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "03991063-7a4c-4e21-9006-05e004cc8e40",
+      "Flags": 0,
+      "Name": "Triggers",
+      "Tags": "goal",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "a6149be5-d7ac-4633-a111-18ca5a92a4ec",
+          "Flags": 0,
+          "Name": "Left",
+          "Position": "-728,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "480a949a-0311-42c0-8894-31687a43e4d8",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,850,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "a65bec8b-4a4e-4ae3-aeed-566e56796950",
+          "Flags": 0,
+          "Name": "Right",
+          "Position": "728,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "ebed0c04-b2d0-43bb-bcbc-89c083804254",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,850,50",
+              "Static": false
+            }
+          ]
+        }
+      ]
     }
   ],
   "SceneProperties": {

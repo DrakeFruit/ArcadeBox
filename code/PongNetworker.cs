@@ -2,6 +2,7 @@ using Sandbox.Network;
 using System.Threading.Tasks;
 using System;
 using Sandbox;
+using System.Dynamic;
 
 
 [Title( "Pong Networker" )]
@@ -25,6 +26,14 @@ public sealed class PongNetworker : Component, Component.INetworkListener
 	/// </summary>
 	[Property] public List<GameObject> SpawnPoints { get; set; }
 
+	public List<PlayerData> Players { get; set; } = new();
+
+	public struct PlayerData
+	{
+		public Connection connection;
+		public int Score;
+	}
+
 	protected override async Task OnLoad()
 	{
 		if ( Scene.IsEditor )
@@ -44,6 +53,7 @@ public sealed class PongNetworker : Component, Component.INetworkListener
 	public void OnActive( Connection channel )
 	{
 		Log.Info( $"Player '{channel.DisplayName}' has joined the game" );
+		Players.Add( new PlayerData { connection = channel, Score = 0 } );
 
 		if ( PlayerPrefab is null )
 			return;

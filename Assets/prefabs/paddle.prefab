@@ -3,6 +3,7 @@
     "__guid": "e321a290-fcae-43a8-ac12-9790fbd9b287",
     "Flags": 0,
     "Name": "paddle",
+    "Tags": "paddle",
     "Enabled": true,
     "Components": [
       {
